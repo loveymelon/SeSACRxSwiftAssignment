@@ -238,7 +238,6 @@ class BirthdayViewController: UIViewController {
                 owner.nextButton.isEnabled = false
             }
             
-            let todayComponents = Calendar.current.dateComponents([.year, .month, .day], from: Date())
             guard let year = dateComponents.year else { return }
             guard let month = dateComponents.month else { return }
             guard let day = dateComponents.day else { return }

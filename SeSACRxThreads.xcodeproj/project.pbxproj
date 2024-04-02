@@ -28,7 +28,20 @@
 		041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280702AEFAD3D00972552 /* PhoneViewController.swift */; };
 		041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280722AEFAD4B00972552 /* NicknameViewController.swift */; };
 		041280782AF1D14000972552 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041280772AF1D14000972552 /* Resource.swift */; };
+		DF12D70A2BBAFF63009E84B5 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12D7092BBAFF63009E84B5 /* ShoppingViewController.swift */; };
+		DF12D70C2BBAFF71009E84B5 /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12D70B2BBAFF71009E84B5 /* ShoppingView.swift */; };
+		DF12D70E2BBAFF7C009E84B5 /* ShoppingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12D70D2BBAFF7C009E84B5 /* ShoppingModel.swift */; };
+		DF12D7112BBB00D6009E84B5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12D7102BBB00D6009E84B5 /* BaseView.swift */; };
+		DF12D7132BBB00E5009E84B5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12D7122BBB00E5009E84B5 /* BaseViewController.swift */; };
+		DF12D7172BBB026F009E84B5 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DF12D7162BBB026F009E84B5 /* Then */; };
+		DF12D7192BBB02B9009E84B5 /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12D7182BBB02B9009E84B5 /* ShoppingTableViewCell.swift */; };
+		DF12D71F2BBB068F009E84B5 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = DF12D71E2BBB068F009E84B5 /* Differentiator */; };
+		DF12D7212BBB068F009E84B5 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = DF12D7202BBB068F009E84B5 /* RxDataSources */; };
+		DF12D7232BBB18D5009E84B5 /* ShoppingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12D7222BBB18D5009E84B5 /* ShoppingHeaderView.swift */; };
 		DF71624A2BB9A307008A378E /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7162492BB9A307008A378E /* SampleViewController.swift */; };
+		DF84E5F62BBBFA8100B5E5A5 /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = DF84E5F52BBBFA8100B5E5A5 /* RxGesture */; };
+		DF84E5F82BBC227E00B5E5A5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF84E5F72BBC227E00B5E5A5 /* DetailViewController.swift */; };
+		DF84E5FA2BBC228C00B5E5A5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF84E5F92BBC228C00B5E5A5 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +84,16 @@
 		041280702AEFAD3D00972552 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		041280722AEFAD4B00972552 /* NicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameViewController.swift; sourceTree = "<group>"; };
 		041280772AF1D14000972552 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		DF12D7092BBAFF63009E84B5 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		DF12D70B2BBAFF71009E84B5 /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
+		DF12D70D2BBAFF7C009E84B5 /* ShoppingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingModel.swift; sourceTree = "<group>"; };
+		DF12D7102BBB00D6009E84B5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		DF12D7122BBB00E5009E84B5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DF12D7182BBB02B9009E84B5 /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		DF12D7222BBB18D5009E84B5 /* ShoppingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingHeaderView.swift; sourceTree = "<group>"; };
 		DF7162492BB9A307008A378E /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		DF84E5F72BBC227E00B5E5A5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DF84E5F92BBC228C00B5E5A5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +102,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				041280602AEFA0AC00972552 /* SnapKit in Frameworks */,
+				DF12D71F2BBB068F009E84B5 /* Differentiator in Frameworks */,
 				0412805D2AEFA09E00972552 /* RxSwift in Frameworks */,
+				DF12D7212BBB068F009E84B5 /* RxDataSources in Frameworks */,
 				0412805B2AEFA09E00972552 /* RxCocoa in Frameworks */,
+				DF12D7172BBB026F009E84B5 /* Then in Frameworks */,
+				DF84E5F62BBBFA8100B5E5A5 /* RxGesture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +151,9 @@
 		041280222AEF9BAB00972552 /* SeSACRxThreads */ = {
 			isa = PBXGroup;
 			children = (
+				DF12D71A2BBB030E009E84B5 /* Extension */,
+				DF12D70F2BBB00C1009E84B5 /* Base */,
+				DF12D7082BBAFDC5009E84B5 /* Shopping */,
 				DF7162482BB9A2E8008A378E /* Sample */,
 				041280532AEF9C1F00972552 /* SignUp */,
 				041280542AEF9C2600972552 /* SignIn */,
@@ -195,6 +224,36 @@
 			path = SignUpOptional;
 			sourceTree = "<group>";
 		};
+		DF12D7082BBAFDC5009E84B5 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				DF12D7092BBAFF63009E84B5 /* ShoppingViewController.swift */,
+				DF12D70B2BBAFF71009E84B5 /* ShoppingView.swift */,
+				DF12D70D2BBAFF7C009E84B5 /* ShoppingModel.swift */,
+				DF12D7182BBB02B9009E84B5 /* ShoppingTableViewCell.swift */,
+				DF12D7222BBB18D5009E84B5 /* ShoppingHeaderView.swift */,
+				DF84E5F72BBC227E00B5E5A5 /* DetailViewController.swift */,
+				DF84E5F92BBC228C00B5E5A5 /* DetailView.swift */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		DF12D70F2BBB00C1009E84B5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DF12D7102BBB00D6009E84B5 /* BaseView.swift */,
+				DF12D7122BBB00E5009E84B5 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DF12D71A2BBB030E009E84B5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		DF7162482BB9A2E8008A378E /* Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +282,10 @@
 				0412805A2AEFA09E00972552 /* RxCocoa */,
 				0412805C2AEFA09E00972552 /* RxSwift */,
 				0412805F2AEFA0AC00972552 /* SnapKit */,
+				DF12D7162BBB026F009E84B5 /* Then */,
+				DF12D71E2BBB068F009E84B5 /* Differentiator */,
+				DF12D7202BBB068F009E84B5 /* RxDataSources */,
+				DF84E5F52BBBFA8100B5E5A5 /* RxGesture */,
 			);
 			productName = SeSACRxThreads;
 			productReference = 041280202AEF9BAB00972552 /* SeSACRxThreads.app */;
@@ -299,6 +362,9 @@
 			packageReferences = (
 				041280592AEFA09D00972552 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				0412805E2AEFA0AC00972552 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DF12D7152BBB026F009E84B5 /* XCRemoteSwiftPackageReference "Then" */,
+				DF12D71D2BBB068F009E84B5 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				DF84E5F42BBBFA8100B5E5A5 /* XCRemoteSwiftPackageReference "RxGesture" */,
 			);
 			productRefGroup = 041280212AEF9BAB00972552 /* Products */;
 			projectDirPath = "";
@@ -342,18 +408,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF12D70C2BBAFF71009E84B5 /* ShoppingView.swift in Sources */,
 				041280782AF1D14000972552 /* Resource.swift in Sources */,
 				0412806F2AEFAD2D00972552 /* BirthdayViewController.swift in Sources */,
 				041280652AEFA2F000972552 /* SignTextField.swift in Sources */,
+				DF12D7132BBB00E5009E84B5 /* BaseViewController.swift in Sources */,
+				DF12D7192BBB02B9009E84B5 /* ShoppingTableViewCell.swift in Sources */,
 				0412806C2AEFABFE00972552 /* PasswordViewController.swift in Sources */,
+				DF12D70A2BBAFF63009E84B5 /* ShoppingViewController.swift in Sources */,
 				041280562AEFA04800972552 /* SignInViewController.swift in Sources */,
 				041280282AEF9BAB00972552 /* ViewController.swift in Sources */,
 				DF71624A2BB9A307008A378E /* SampleViewController.swift in Sources */,
+				DF84E5F82BBC227E00B5E5A5 /* DetailViewController.swift in Sources */,
+				DF12D7232BBB18D5009E84B5 /* ShoppingHeaderView.swift in Sources */,
 				041280632AEFA0CE00972552 /* PointButton.swift in Sources */,
+				DF12D70E2BBAFF7C009E84B5 /* ShoppingModel.swift in Sources */,
 				041280242AEF9BAB00972552 /* AppDelegate.swift in Sources */,
 				041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */,
+				DF84E5FA2BBC228C00B5E5A5 /* DetailView.swift in Sources */,
 				0412806A2AEFA91E00972552 /* SignUpViewController.swift in Sources */,
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
+				DF12D7112BBB00D6009E84B5 /* BaseView.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
 				041280582AEFA05300972552 /* SignInViewModel.swift in Sources */,
 			);
@@ -712,6 +787,30 @@
 				minimumVersion = 5.6.0;
 			};
 		};
+		DF12D7152BBB026F009E84B5 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		DF12D71D2BBB068F009E84B5 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		DF84E5F42BBBFA8100B5E5A5 /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -729,6 +828,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0412805E2AEFA0AC00972552 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		DF12D7162BBB026F009E84B5 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF12D7152BBB026F009E84B5 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		DF12D71E2BBB068F009E84B5 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF12D71D2BBB068F009E84B5 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		DF12D7202BBB068F009E84B5 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF12D71D2BBB068F009E84B5 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		DF84E5F52BBBFA8100B5E5A5 /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF84E5F42BBBFA8100B5E5A5 /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
