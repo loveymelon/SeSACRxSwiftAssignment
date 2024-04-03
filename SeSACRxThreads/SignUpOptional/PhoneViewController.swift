@@ -14,10 +14,16 @@ class PhoneViewController: UIViewController {
    
     let phoneTextField = SignTextField(placeholderText: "연락처를 입력해주세요")
     let nextButton = PointButton(title: "다음")
-    let descriptionLabel = UILabel()
+    let descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.text = "8자 이상 입력해주세요"
+        label.textColor = .red
+        return label
+    }()
     
     let basicPhoneText = BehaviorSubject(value: "010")
-    let validText = Observable.just("10자 이상 입력해주세요")
+    
+    let phoneViewModel = PhoneViewModel()
     
     let disposeBag = DisposeBag()
     
@@ -57,18 +63,22 @@ class PhoneViewController: UIViewController {
 
     func configureUI() {
         basicPhoneText.bind(to: phoneTextField.rx.text).disposed(by: disposeBag)
-        validText.bind(to: descriptionLabel.rx.text).disposed(by: disposeBag)
         
-        phoneTextField.rx.text.orEmpty.map { $0.count >= 10 && Int($0) != nil }.bind(to: nextButton.rx.isEnabled, descriptionLabel.rx.isHidden).disposed(by: disposeBag)
+        phoneTextField
+            .rx
+            .text
+            .orEmpty
+            .subscribe(phoneViewModel.inputPhoneText)
+            .disposed(by: disposeBag)
         
-        phoneTextField.rx.text.orEmpty.map { $0.count >= 10 && Int($0) != nil }
-            .bind(with: self) { owner, bool in
-                
+        phoneViewModel.outputCheckBool
+            .asDriver(onErrorJustReturn: false)
+            .drive(with: self, onNext: { owner, bool in
                 owner.nextButton.isEnabled = bool
                 owner.descriptionLabel.isHidden = bool
                 owner.nextButton.backgroundColor = bool ? .systemPink : .lightGray
-                
-            }.disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
         
         nextButton.rx.tap.bind(with: self) { owner, _ in
             owner.navigationController?.pushViewController(NicknameViewController(), animated: true)

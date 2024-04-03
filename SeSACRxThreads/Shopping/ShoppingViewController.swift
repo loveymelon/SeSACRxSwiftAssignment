@@ -29,7 +29,8 @@ class ShoppingViewController: BaseViewController<ShoppingView> {
     }
     
     override func bind() {
-        shoppingViewModel.outputItems
+        shoppingViewModel
+            .outputItems
             .asDriver(onErrorJustReturn: [])
             .drive(mainView.tableView.rx.items(cellIdentifier: ShoppingTableViewCell.identifier, cellType: ShoppingTableViewCell.self)) { indexPath, item, cell in
                 
@@ -51,7 +52,8 @@ class ShoppingViewController: BaseViewController<ShoppingView> {
 
             }.disposed(by: disposeBag)
         
-        mainView.searchButton.rx
+        mainView.searchButton
+            .rx
             .tap
             .withLatestFrom(mainView.searchTextField.rx.text.orEmpty)
             .subscribe(shoppingViewModel.inputSearchText)
@@ -64,7 +66,10 @@ class ShoppingViewController: BaseViewController<ShoppingView> {
         
         
         
-        mainView.tableView.rx.itemSelected.bind(with: self) { owner, indexPath in
+        mainView.tableView
+            .rx
+            .itemSelected
+            .bind(with: self) { owner, indexPath in
             print("taaap")
             let vc = DetailViewController()
             vc.shoppingModel = owner.shoppingViewModel.dummy[indexPath.row]
@@ -77,8 +82,11 @@ class ShoppingViewController: BaseViewController<ShoppingView> {
             owner.navigationController?.pushViewController(vc, animated: true)
         }.disposed(by: disposeBag)
         
-        mainView.searchTextField.rx
-            .text.orEmpty.debounce(.seconds(1), scheduler: MainScheduler.instance)
+        mainView.searchTextField
+            .rx
+            .text
+            .orEmpty
+            .debounce(.seconds(1), scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .subscribe(shoppingViewModel.inputChangeSearchText)
             .disposed(by: disposeBag)
